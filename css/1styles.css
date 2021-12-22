@@ -88,7 +88,7 @@ textarea {
     width: 16px;
     height: 18px;
 
-    background-image: url(/Device/img/cart-icon.svg);
+    background-image: url(/img/cart-icon.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -126,17 +126,17 @@ color: #fb565a;
 
 .slider #slider1:checked ~.slides .slide1 {
 	display: block;
-    background-image: url(/Device/img/nerds-index-slide1.png);
+    background-image: url(/img/nerds-index-slide1.png);
 }
 
 .slider #slider2:checked ~.slides .slide2 {
 	display: block;
-    background-image: url(/Device/img/nerds-index-slide2.png);
+    background-image: url(/img/nerds-index-slide2.png);
 }
 
 .slider #slider3:checked ~.slides .slide3 {
 	display: block;
-    background-image: url(/Device/img/nerds-index-slide3.png);
+    background-image: url(/img/nerds-index-slide3.png);
 }
 
 .slides {
@@ -913,7 +913,7 @@ label {
 }
 
 .filter-input-checkbox:checked:disabled+label::after {
-    background-image: url(/Device/img/сheсkbox-disabled.svg);
+    background-image: url(/img/сheсkbox-disabled.svg);
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -923,7 +923,7 @@ label {
     position: absolute;
     left: 6px;
     top: -1px;
-    background-image: url(/Device/img/сheсkbox.svg);
+    background-image: url(/img/сheсkbox.svg);
     background-repeat: no-repeat;
 }
 
