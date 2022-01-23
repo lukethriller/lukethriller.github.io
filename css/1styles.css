@@ -53,13 +53,14 @@ textarea {
 .site-navigation {
     list-style: none;
     margin: 0;
-    margin-right: 175px;
+    margin-right: 160px;
     display: flex;
     justify-content: space-between;
     width: 35%;
     align-items: center;
     font-weight: bold;
     max-width: 360px;
+    padding-top: 2px;
 }
 
 .site-navigation li {
@@ -76,14 +77,15 @@ textarea {
     display: flex;
     align-items: center;
     font-weight: bold;
+    padding-right: 79px;
 }
 
 .shopping-cart-link::before {
     content: "";
 
     position: absolute;
-    top: 82px;
-    right: 235px;
+    top: 84px;
+    right: 318px;
 
     width: 16px;
     height: 18px;
@@ -96,6 +98,7 @@ textarea {
 .site-navigation a, 
 .shopping-cart a {
     color: black;
+    padding-right: 0;
 }
 
 .site-navigation a:hover,
@@ -113,16 +116,14 @@ color: #fb565a;
 
   .slide {
 	display: none;
-    height: 100%;
+    height: 84%;
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 70%;
+    background-position: 84% 100%;
+    background-size: contain;
+    padding-bottom: 80px;
 
 }
 
-.slider {
-    padding-bottom: 50px;
-}
 
 .slider #slider1:checked ~.slides .slide1 {
 	display: block;
@@ -140,7 +141,7 @@ color: #fb565a;
 }
 
 .slides {
-    height: 500px;
+    max-height: 500px;
     background-color: #eeeeee;
 }
 
@@ -150,8 +151,8 @@ color: #fb565a;
 
 .slider-control {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 5px;
     background-color: #c2c2c2;
     border-radius: 50%;
     border: 6px solid #ffffff;
@@ -160,20 +161,20 @@ color: #fb565a;
 
 .slider-controls {
     position: absolute;
-    left: 50%;
-    bottom: 100px;
+    left: 45%;
+    bottom: 78px;
 }
 
 
 .slider-control::before {
     content: "";
-    width: 9px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     border-radius: 4px;
     background: #fff;
     position: absolute;
-    top: 21%;
-    left: 21%;
+    top: 19%;
+    left: 20%;
 }
 
 .slider input:checked + .slider-controls label {
@@ -182,12 +183,13 @@ color: #fb565a;
 
 
 .slider-title {
-    font-size: 40px;
-    line-height: 115%;
+    font-size: 55px;
+    line-height: 100%;
     font-weight: bold;
     margin: 0;
-    padding-top: 50px;
-    margin-bottom: 20px;
+    padding-top: 63px;
+    margin-bottom: 25px;
+    padding-left: 2px;
 }
 
 .slider-description {
@@ -197,7 +199,7 @@ color: #fb565a;
 .button {
     display: inline-block;
     padding-bottom: 16px;
-    padding: 10px 30px;
+    padding: 13px 30px;
 
     font: 240px 50px;
     text-align: center;
@@ -262,11 +264,16 @@ color: #fb565a;
 } 
 
 .services {
-    padding-top: 40px;
+    padding-top: 79px;
+}
+
+.services-title {
+    font-size: 25px;
+    line-height: 15px;
 }
 
 .services-text {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .slider .containers {
@@ -278,29 +285,29 @@ color: #fb565a;
 }
 
 .description-title {
-    font-size: 40px;
-    line-height: 115%;
+    font-size: 46px;
+    line-height: 101%;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
 .description-title2 {
     font-size: 16px;
-    line-height: 115%;
+    line-height: 148%;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-weight: bold;
 }
 
 .description-title_1{
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .description-text-index {
     position: relative;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-left: 36px;
+    margin-bottom: 24px;
 }
 
 .description-text-index::before {
@@ -315,13 +322,13 @@ color: #fb565a;
 }
 
 .statistics {
-    margin-top: -15px;
+    margin-top: -49px;
 }
 
 .description-statistic-container {
     display: flex;
     flex-direction: row;
-    padding-top: 165px;
+    padding-top: 154px;
     bottom: 80px;
 }
 
@@ -340,7 +347,7 @@ color: #fb565a;
 .statistic-psevdo::after {
     content: "";
     position: absolute;
-    bottom: -60px;
+    bottom: -52px;
     width: 1160px;
     height: 2px;
     background: #eeeeee;
@@ -353,19 +360,21 @@ color: #fb565a;
 .statistic-psevdo1::before {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: 3px;
     width: 1160px;
     height: 2px;
     background: #eeeeee;
 }
 
 .description {
-    margin-right: 200px;
+    max-width: 700px;
+    margin-right: 101px;
 }
 
 table {
-    width: 100%;
+    width: 90%;
     text-align: left;
+    padding-left: 39px;
 }
 
 .statistics-title {
@@ -374,9 +383,10 @@ table {
 }
 
 .statistics-title1 {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     font-weight: bold;
     text-align: center;
+    padding-top: 14px;
 }
 
 .statistics-description {
@@ -390,13 +400,14 @@ table {
 .partners {
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
 
 .partners-logo {
     opacity: 20%;
+    padding-right: 35px;
 }
 
 .partners-logo:hover {
@@ -407,16 +418,16 @@ table {
     opacity: 10%;
 }
 
-
 .footer-social {
     max-width: 100%;
     display: flex;
-    padding-top: 50px;
-    margin: 0 auto;
-    max-width: 1160px;
+    padding-top: 25px;
+    line-height: 15px;
+    font-size: 16px;
+    margin: 2px auto;
+    max-width: 1238px;
     position: relative;
     margin-bottom: 50px;
-    }
 }
 
 .footer-social-text {
@@ -424,15 +435,15 @@ table {
 }
 
 .friends {
-    padding-left: 140px;
+    padding-left: 131px;
 }
 
 .friends h3 {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 37px;
+    line-height: 37px;
     font-weight: 700;
-    padding: 0;
-    margin: 4px 0 10px;
+    padding: 2px;
+    margin: 2px -4px 10px;
 }
 
 .footer-social span {
@@ -498,6 +509,8 @@ table {
     position: absolute;
     background-color: white;
     left: 140px;
+    margin-top: -15px;
+    line-height: 36px;
 }
 
 .modal-close {
@@ -552,12 +565,28 @@ table {
 
 .map {
     position: relative;
+    top: 27px;
+    padding-bottom: 64px;
 }
 
 .modal {
-    padding: 48px 48px 48px 50px;
+    padding: 53px 51px 29px 50px;
     transform: translate(0%, -50%);
-    top: 50%;
+    top: 42%;
+}
+
+.modal-title {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.modal-adress {
+    margin-top: 18px;
+    line-height: 15px;
+}
+
+.modal-telephone {
+    padding-bottom: 10px;
 }
 
 .write-us-text{
@@ -674,7 +703,7 @@ form {
 .sorting-buttons {
     display: flex;
     justify-content: space-between;
-    max-width: 1160px;
+    max-width: 1238px;
     padding: 0;
     margin: 0 auto;
 }
@@ -694,7 +723,7 @@ form {
 fieldset {
     border: 0;
     padding: 0;
-    margin: 0 0 20px;
+    margin: -2px 0 54px;
 }
 
 .filter h2 {
@@ -788,7 +817,7 @@ label {
 
 .filter legend {
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 }
 
 .filter h2, .filter legend {
@@ -946,8 +975,8 @@ button, input {
 
 .catalog-partners .container {
     max-width: 760px;
+    padding-right: 78px;
 }
-
 
 element.style {
 }
@@ -983,8 +1012,9 @@ b, strong {
 }
 
 .sorting-item {
-    margin-right: 13px;
+    margin-right: 12px;
     margin-left: 13px;
+    padding-top: 3px;
 
 }
 
@@ -1052,20 +1082,20 @@ button {
 
 .our-partners .description {
     width: 360px;
-    min-height: 165px;
+    min-height: 166px;
     text-align: center;
     padding: 24px 0 40px;
     background-color: #eee;
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
 }
 
 
 .catalog .description h3 {
-    margin-top: 0;
-    margin-bottom: -1px;
+    margin-top: 1px;
+    margin-bottom: 11px;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 31px;
     color: #000;
 }
 
@@ -1082,7 +1112,7 @@ button {
     border-radius: 3px;
     color: #fff;
     line-height: 18px;
-    padding: 13px 61px;
+    padding: 14px 62px;
     cursor: pointer;
 }
 
@@ -1115,9 +1145,8 @@ button {
 
 .catalog h1 {
     font-size: 55px;
-    font-weight: 500;
-    padding-top: 67px;
-    text-align: center;
+    padding-top: 39px;
+    padding-left: 218px;
     font-weight: bold;
 }
 
@@ -1166,8 +1195,8 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 44px;
-    padding-bottom: 70px;
+    margin-top: 40px;
+    padding-bottom: 72px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1176,6 +1205,11 @@ button {
 
 .pagination-item .active {
     background-color: #fff;
+}
+
+
+.pagination-item .next {
+    padding: 13px 75px;
 }
 
 .pagination-item a {
