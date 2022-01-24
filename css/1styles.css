@@ -794,7 +794,9 @@ fieldset {
 }
 
 .filter-option label {
-    color: #283136;
+    color: black;
+    opacity: 0.5;
+
 }
 
 .cost-range label {
@@ -853,9 +855,13 @@ legend {
     overflow: hidden;
 }
 
-.filter-input-radio:disabled+label {
+.filter-input-radio:disabled+label,
+.filter-input-radio:disabled+label:hover {
     color: #ededed;
+    opacity: 1;
 }
+
+
 
 .net-option label {
     position: relative;
@@ -880,6 +886,7 @@ label {
     top: 0;
     border: 4px solid #a6a6a6;
     border-radius: 50%;
+    opacity: 0.5;
 }
 
 .filter-input-radio:checked:disabled+label::after {
@@ -1018,8 +1025,12 @@ b, strong {
 
 }
 
-.filter-input-radio+label:hover, .sorting-item .active, .sorting-item a:active {
-    color: #000;
+.filter-input-radio+label:hover:enabled, .sorting-item .active, .sorting-item a:active {
+    opacity: 1;
+}
+
+.filter-input-radio+label:hover::before {
+    opacity: 1;
 }
 
 .sorting a {
